@@ -37,3 +37,58 @@
 .navbar ul li a:hover{
     border-bottom: 4px solid purple;
 }
+
+
+/*------home------*/
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(images/bg.png);
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.heading{
+    color: whitesmoke;
+    font-size: 3rem;
+    text-align: center;
+    transform: scale(1, 1.3);
+    letter-spacing: 4px;
+}
+
+/*----portfolio----*/
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+.portfolio h1{
+    margin: 60px;
+}
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width: 200;
+    height: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+.gallery img:hover{
+    background: white;
+    cursor: pointer;
+}
