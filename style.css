@@ -4,3 +4,36 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+
+/*------navbar------*/
+.navbar{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul li{
+   font-size: 1.1 rem;
+}
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.navbar ul li a:hover{
+    border-bottom: 4px solid purple;
+}
